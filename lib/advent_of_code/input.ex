@@ -83,7 +83,5 @@ defmodule AdventOfCode.Input do
   defp allow_network?, do: Keyword.get(config(), :allow_network?, false)
 
   defp headers,
-    do:
-      [{'cookie', String.to_charlist("session=" <> Keyword.get(config(), :session_cookie))}]
-      |> IO.inspect(label: "cookies")
+    do: [{'cookie', String.to_charlist("session=" <> Keyword.get(config(), :session_cookie))}]
 end
