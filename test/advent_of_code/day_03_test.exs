@@ -1,15 +1,21 @@
-defmodule AdventOfCode.Day02Test do
+defmodule AdventOfCode.Day03Test do
   use ExUnit.Case
 
-  import AdventOfCode.Day02
+  import AdventOfCode.Day03
 
   @input """
-  forward 5
-  down 5
-  forward 8
-  up 3
-  down 8
-  forward 2
+  00100
+  11110
+  10110
+  10111
+  10101
+  01111
+  00111
+  11100
+  10000
+  11001
+  00010
+  01010
   """
 
   @tag :skip
@@ -17,7 +23,7 @@ defmodule AdventOfCode.Day02Test do
     input = @input
     result = part1(input)
 
-    assert result == 150
+    assert result == 198
   end
 
   @tag :skip
@@ -25,6 +31,6 @@ defmodule AdventOfCode.Day02Test do
     input = @input
     result = part2(input)
 
-    assert result == 900
+    assert result == 230
   end
 end
