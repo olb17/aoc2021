@@ -16,15 +16,15 @@ defmodule AdventOfCode.Day05Test do
   5,5 -> 8,2
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     input = @input
     result = part1(input)
 
-    assert result == 5
+    assert result == 5934
   end
 
-  @tag :skip_no
+  @tag :skip
   test "part2" do
     input = @input
     result = part2(input)
