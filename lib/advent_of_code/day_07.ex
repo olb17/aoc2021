@@ -18,8 +18,7 @@ defmodule AdventOfCode.Day07 do
       |> Enum.map(&String.to_integer/1)
       |> Enum.frequencies()
 
-    min_candidate = Map.keys(positions) |> Enum.min()
-    max_candidate = Map.keys(positions) |> Enum.max()
+    {min_candidate, max_candidate} = Map.keys(positions) |> Enum.min_max()
     {positions, min_candidate, max_candidate}
   end
 
