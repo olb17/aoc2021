@@ -30,13 +30,12 @@ defmodule AdventOfCode.Day06 do
   end
 
   def part2(args) do
-    map =
-      args
-      |> parse_args()
-      |> Enum.frequencies()
-      |> simulate_day2(@nb_days_part2)
-      |> Enum.map(fn {_k, v} -> v end)
-      |> Enum.sum()
+    args
+    |> parse_args()
+    |> Enum.frequencies()
+    |> simulate_day2(@nb_days_part2)
+    |> Map.values()
+    |> Enum.sum()
   end
 
   def simulate_day2(map, 0), do: map
