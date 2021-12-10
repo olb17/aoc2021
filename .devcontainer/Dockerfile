@@ -1,5 +1,5 @@
 ARG VARIANT=latest
-FROM elixir:1.11
+FROM elixir:1.12
 
 # This Dockerfile adds a non-root user with sudo access. Update the “remoteUser” property in
 # devcontainer.json to use it. More info: https://aka.ms/vscode-remote/containers/non-root-user.
