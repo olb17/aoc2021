@@ -16,7 +16,7 @@ defmodule AdventOfCode.Day10Test do
   <{([{{}}[<[[[<>{}]]]>[]]
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     input = @input
     result = part1(input)
@@ -24,7 +24,7 @@ defmodule AdventOfCode.Day10Test do
     assert result == 26397
   end
 
-  @tag :skip_no
+  @tag :skip
   test "part2" do
     input = @input
     result = part2(input)
