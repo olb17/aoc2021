@@ -16,7 +16,7 @@ defmodule AdventOfCode.Day11Test do
   5283751526
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     input = @input
     result = part1(input)
@@ -24,7 +24,7 @@ defmodule AdventOfCode.Day11Test do
     assert result == 1656
   end
 
-  @tag :skip_no
+  @tag :skip
   test "part2" do
     input = @input
     result = part2(input)
