@@ -24,7 +24,7 @@ defmodule AdventOfCode.Day14Test do
   CN -> C
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     input = @input
     result = part1(input)
