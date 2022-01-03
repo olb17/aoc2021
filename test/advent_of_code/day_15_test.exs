@@ -16,11 +16,19 @@ defmodule AdventOfCode.Day15Test do
   2311944581
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     input = @input
     result = part1(input)
 
     assert result == 40
+  end
+
+  @tag :skip
+  test "part2" do
+    input = @input
+    result = part2(input)
+
+    assert result == 315
   end
 end
