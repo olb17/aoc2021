@@ -47,7 +47,7 @@ defmodule AdventOfCode.Day12Test do
   start-RW
   """
 
-  @tag :skip_no
+  @tag :skip
   test "part1" do
     result = part1(@input1)
     assert result == 10
@@ -59,7 +59,7 @@ defmodule AdventOfCode.Day12Test do
     assert result == 226
   end
 
-  @tag :skip_no
+  @tag :skip
   test "part2" do
     result = part2(@input1)
     assert result == 36
